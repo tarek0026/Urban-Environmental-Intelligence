@@ -1,0 +1,151 @@
+🧠 🌍 Urban Environmental Intelligence System
+
+Analyze and predict urban environmental factors affecting air quality and energy usage.
+
+🎯 Research Questions
+1️⃣ Green Space → Air Quality
+
+Does increasing green space improve air quality?
+
+2️⃣ Weekend vs Weekday → Air Quality
+
+Are pollution levels lower on weekends?
+
+3️⃣ Temperature → Electricity
+
+How does temperature affect electricity consumption?
+
+🔗 الربط:
+
+Temperature → Electricity → Emissions → Air Quality
+
+🔥 كدا عندك Story مترابطة (مهم جدًا في التقييم)
+
+
+
+📊 Phase 1: Data Collection
+🎯 الهدف:
+
+جمع real datasets من مصادر مختلفة
+
+✔ البيانات المطلوبة:
+Air Quality (AQI)
+Weather (Temperature, Humidity, Wind)
+Electricity Consumption
+Green Space
+
+
+
+Phase 2: Data Integration
+🎯 الهدف:
+
+دمج كل البيانات في Dataset واحدة
+
+🔥 المفتاح:
+City
+Date
+
+
+
+
+Features النهائية:
+🌡 Weather:
+Temperature
+Humidity
+Wind Speed
+⚡ Energy:
+Electricity Consumption
+🌆 Location:
+City
+🌳 Environment:
+Green Space per capita
+📅 Time:
+Date
+Day of Week
+Is Weekend
+Month
+Season
+💡 Output:
+AQI (Target)
+
+
+
+Phase 3: Data Preprocessing
+
+Handle missing values
+Remove outliers
+Convert Date → datetime
+Encode City
+Normalize 
+
+
+📊 Phase 4: EDA (Exploratory Data Analysis)
+
+
+🔍 Q1:
+Green Space vs AQI
+Scatter Plot
+Insight:
+
+كل ما المساحات الخضراء تزيد → AQI يقل
+
+🔍 Q3:
+Weekend vs Weekday
+Boxplot
+Insight:
+
+التلوث أقل في الويك إند
+
+🔍 Q2:
+Temperature vs Electricity
+Scatter + Line
+Insight:
+
+الحرارة العالية → استهلاك أعلى
+
+🔥 لازم:
+
+≥ 4 graphs + تفسير لكل واحد
+
+🤖 Phase 5: Modeling
+🎯 الهدف:
+
+نبني Model يربط كل حاجة
+
+🔥 أفضل اختيار:
+Predict → AQI
+باستخدام:
+Temperature
+Electricity
+Wind
+Green Space
+Is Weekend
+City
+
+
+🖥 Phase 6: Dashboard
+🎯 باستخدام: Streamlit
+🔹 Sections:
+1. Visualizations
+كل graphs اللي عملتها
+2. Prediction Tool 🔥
+
+User يدخل:
+
+Temperature
+City
+Weekend
+
+➡️ يطلع:
+
+Predicted AQI
+🎤 Phase 7: Presentation & Documentation
+
+
+
+Report:
+Problem
+Data
+Methodology
+Results
+Conclusion
