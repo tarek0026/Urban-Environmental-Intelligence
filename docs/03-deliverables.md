@@ -16,11 +16,11 @@ This phase focuses on statistical analysis, hypothesis testing, and creating vis
 
 | Member | Name | GitHub | Task |
 |-------|------|--------|------|
-| **Member 1** | **[You]** | - | Project Lead - Coordinate & Review |
+| **Member 1** | lBebol (Abdelrahman Yasser Hassan Zaky) | lBebol | Project Lead - Coordinate & Review |
 | **Member 2** | tarek0026 | github.com/tarek0026 | Q1: Statistical Analysis & Visualization |
 | **Member 3** | Yehia312 | github.com/Yehia312 | Q2: Statistical Analysis & Visualization |
 | **Member 4** | koka-gamal | github.com/koka-gamal | Q3: Statistical Analysis & Visualization |
-| **Member 5** | **[Unknown]** | - | Results Compilation & Summary |
+| **Member 5** | Loaay Ahmed Mohammed (221001621) | — | Results Compilation & Summary |
 
 ---
 
@@ -50,7 +50,7 @@ This phase focuses on statistical analysis, hypothesis testing, and creating vis
 - [ ] Generate key statistics summary
 - [ ] Save visualizations to `results/q3_weekend_weekday/`
 
-### Member 5 [Unknown] - Results Compilation
+### Member 5 [Loaay Ahmed Mohammed] - Results Compilation
 - [ ] Compile all results into summary document
 - [ ] Create consolidated statistics table
 - [ ] Verify all visualizations are properly saved

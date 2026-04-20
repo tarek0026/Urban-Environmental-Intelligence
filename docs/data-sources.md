@@ -1,6 +1,6 @@
 # Data Sources Guide
 
-**Status: Pending - Member 5 to be assigned**
+**Assigned to: Member 5 - Loaay Ahmed Mohammed (ID: 221001621)**
 
 ---
 

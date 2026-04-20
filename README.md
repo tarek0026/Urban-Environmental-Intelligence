@@ -1,35 +1,67 @@
-# DataAnalysis
+# DataAnalysis - Environment & Sustainability Data Analysis Project
 
-Environment & Sustainability Data Analysis Project
+A comprehensive data analysis project examining environmental and sustainability trends across major cities.
+
+## Project Overview
+
+This project investigates three key research questions related to urban environment and sustainability:
+
+1. **Air Quality & Green Spaces**: Does air quality improve in cities with higher green space coverage per capita?
+2. **Temperature & Energy**: How does temperature variation correlate with electricity consumption across major cities?
+3. **Weekend vs Weekday Pollution**: Are air pollution levels significantly lower on weekends compared to weekdays?
 
 ## Team Members
 
-| Member | Role |
-|---|---|
-| Member 1 | Repository Owner & Lead |
-| Member 2 | Research Q1 - Green Space & Air Quality |
-| Member 3 | Research Q2 - Temperature & Electricity |
-| Member 4 | Research Q3 - Weekend vs Weekday Pollution |
-
-## Research Questions
-
-1. Does air quality improve in cities with higher green space coverage per capita?
-2. How does temperature variation correlate with electricity consumption across major cities?
-3. Are air pollution levels significantly lower on weekends compared to weekdays?
+| Member | GitHub | Name | Student ID | Role |
+|--------|--------|------|------------|------|
+| Member 1 | lBebol | Abdelrahman Yasser Hassan Zaky | 231000102 | Repository Owner & Project Lead |
+| Member 2 | tarek0026 | Tarek Mohamed Mohamed | 241001750 | Research Q1 - Green Space & Air Quality |
+| Member 3 | Yehia312 | Yehia Haitham Hassan | 241000277 | Research Q2 - Temperature & Electricity |
+| Member 4 | koka-gamal | Kareem Mohamed Gamal | 241000245 | Research Q3 - Weekend vs Weekday Pollution |
+| Member 5 | — | Loaay Ahmed Mohammed | 221001621 | Data Sources & Verification |
 
 ## Project Structure
 
 ```
-docs/       - Documentation & deliverables
-data/      - Raw datasets
-notebooks/ - Jupyter notebooks for analysis
-src/       - Shared Python modules
-results/   - Generated charts & statistics
+DataAnalysis/
+├── docs/           # Documentation & deliverable files
+├── data/           # Raw and cleaned datasets
+├── notebooks/     # Jupyter notebooks for analysis
+├── src/            # Shared Python modules
+└── results/       # Visualizations & statistical outputs
 ```
+
+## Research Methodology
+
+Each research question follows a structured approach:
+- Data collection from authoritative sources
+- Data cleaning and preprocessing
+- Exploratory data analysis (EDA)
+- Statistical analysis and hypothesis testing
+- Visualization and result interpretation
+
+## Data Sources
+
+All data will be sourced from authoritative public databases including WHO, NOAA, World Bank, and EPA. See `docs/data-sources.md` for detailed information.
 
 ## Workflow
 
-1. Create a branch for your task
-2. Work on your deliverable
-3. Push and create Pull Request
-4. Wait for Member 1 approval to merge
+1. Create a branch for your assigned task
+2. Work on your deliverable in the branch
+3. Push and create a Pull Request to `main`
+4. Wait for Member 1 (lBebol) approval to merge
+
+## Requirements
+
+- Python 3.8+
+- pandas, numpy, matplotlib, seaborn
+- Jupyter Notebook / JupyterLab
+- scipy for statistical analysis
+
+## License
+
+This project is created for academic purposes as part of the university coursework.
+
+---
+
+**Course:** Data Analysis | **Academic Year:** 2025-2026

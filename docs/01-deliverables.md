@@ -16,11 +16,11 @@ This phase focuses on setting up the project foundation, researching each resear
 
 | Member | Name | GitHub | Task |
 |-------|------|--------|------|
-| **Member 1** | **[You]** | - | Repository Setup - Create GitHub repo, folder structure, `.gitignore`, `README.md` |
+| **Member 1** | lBebol (Abdelrahman Yasser Hassan Zaky) | lBebol | Repository Setup - Create GitHub repo, folder structure, `.gitignore`, `README.md` |
 | **Member 2** | tarek0026 | github.com/tarek0026 | Research Q1 Documentation - Green Space & Air Quality |
 | **Member 3** | Yehia312 | github.com/Yehia312 | Research Q2 Documentation - Temperature & Electricity |
 | **Member 4** | koka-gamal | github.com/koka-gamal | Research Q3 Documentation - Weekend vs Weekday Pollution |
-| **Member 5** | **[Unknown]** | - | Data Sourcing Guide |
+| **Member 5** | Loaay Ahmed Mohammed (221001621) | — | Data Sourcing Guide |
 
 ---
 

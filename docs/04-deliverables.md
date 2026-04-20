@@ -16,17 +16,17 @@ This final phase focuses on synthesizing all findings, creating the project repo
 
 | Member | Name | GitHub | Task |
 |-------|------|--------|------|
-| **Member 1** | **[You]** | - | Project Lead - Final Review & Report Editor |
+| **Member 1** | lBebol (Abdelrahman Yasser Hassan Zaky) | lBebol | Project Lead - Final Review & Report Editor |
 | **Member 2** | tarek0026 | github.com/tarek0026 | Q1: Final Summary & Contribution |
 | **Member 3** | Yehia312 | github.com/Yehia312 | Q2: Final Summary & Contribution |
 | **Member 4** | koka-gamal | github.com/koka-gamal | Q3: Final Summary & Contribution |
-| **Member 5** | **[Unknown]** | - | Presentation Slides |
+| **Member 5** | Loaay Ahmed Mohammed (221001621) | — | Presentation Slides |
 
 ---
 
 ## Tasks by Member
 
-### Member 1 [You] - Final Report Editor
+### Member 1 [lBebol] - Final Report Editor
 - [ ] Compile all research findings into final report
 - [ ] Create `docs/final-report.md`
 - [ ] Review and edit all sections
@@ -55,7 +55,7 @@ This final phase focuses on synthesizing all findings, creating the project repo
 - [ ] Document any limitations
 - [ ] Submit to Member 1 for compilation
 
-### Member 5 [Unknown] - Presentation
+### Member 5 [Loaay Ahmed Mohammed] - Presentation
 - [ ] Create presentation slides (Google Slides/PowerPoint)
 - [ ] Include all 3 research questions
 - [ ] Add key visualizations

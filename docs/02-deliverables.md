@@ -16,11 +16,11 @@ This phase focuses on acquiring datasets, cleaning data, and performing initial 
 
 | Member | Name | GitHub | Task |
 |-------|------|--------|------|
-| **Member 1** | **[You]** | - | Project Lead - Coordinate & Review |
+| **Member 1** | lBebol (Abdelrahman Yasser Hassan Zaky) | lBebol | Project Lead - Coordinate & Review |
 | **Member 2** | tarek0026 | github.com/tarek0026 | Q1: Download & Clean Green Space + Air Quality Data |
 | **Member 3** | Yehia312 | github.com/Yehia312 | Q2: Download & Clean Temperature + Electricity Data |
 | **Member 4** | koka-gamal | github.com/koka-gamal | Q3: Download & Clean Air Quality Time Series Data |
-| **Member 5** | **[Unknown]** | - | Verify all data files, Create data dictionary |
+| **Member 5** | Loaay Ahmed Mohammed (221001621) | — | Verify all data files, Create data dictionary |
 
 ---
 
@@ -50,7 +50,7 @@ This phase focuses on acquiring datasets, cleaning data, and performing initial 
 - [ ] Save cleaned data to `data/q3_weekend_weekday_pollution.csv`
 - [ ] Create initial EDA notebook in `notebooks/q3_eda.ipynb`
 
-### Member 5 [Unknown] - Data Verification
+### Member 5 [Loaay Ahmed Mohammed] - Data Verification
 - [ ] Review all cleaned datasets
 - [ ] Create `docs/data-dictionary.md` documenting all variables
 - [ ] Verify data quality and consistency
