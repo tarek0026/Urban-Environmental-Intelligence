@@ -3,3 +3,12 @@ source green spcae :https://statranker.org/cities-urban-life/top-100-cities-by-g
 “Green space data was obtained from the most recent available sources. 
 Since it is a relatively stable urban characteristic,
 it is assumed to be consistent over the study period (2023).”
+
+
+
+"https://air-quality-api.open-meteo.com/v1/air-quality"
+
+
+This dataset contains daily air quality measurements for multiple cities during the year 2023.
+ It includes key air pollution indicators such as
+  PM2.5, PM10, O₃ (ozone), NO₂ (nitrogen dioxide), CO (carbon monoxide), and SO₂ (sulfur dioxide)
