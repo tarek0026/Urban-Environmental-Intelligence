@@ -12,3 +12,13 @@ it is assumed to be consistent over the study period (2023).”
 This dataset contains daily air quality measurements for multiple cities during the year 2023.
  It includes key air pollution indicators such as
   PM2.5, PM10, O₃ (ozone), NO₂ (nitrogen dioxide), CO (carbon monoxide), and SO₂ (sulfur dioxide)
+
+
+  https://www.wunderground.com/history/monthly/eg/al-nozha/HECA/date/2023-1 
+  weather_cairo,web scraping
+
+  https://www.kaggle.com/code/sumedh1507/global-weather-2014-2024-insights/input
+  weather London,nairobi ,New York ,Paris,Tokyo       
+ 
+
+  
