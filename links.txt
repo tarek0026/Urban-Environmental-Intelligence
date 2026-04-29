@@ -46,3 +46,10 @@ Date,City,Temperature_mean,Temperature_max,Humidity,Wind_speed,Pressure
 
 
 
+📊 Electricity Consumption Dataset 
+This dataset, sourced from the U.S. Energy Information Administration (EIA) API,
+ provides time-based records of electricity consumption at the city level. 
+ It includes four main fields: City, Date, Electricity Consumption, and Source.
+  The data represents retail electricity usage delivered to end users
+   and can be used to analyze consumption patterns and study its relationship 
+   with factors such as weather and air quality.
