@@ -2,9 +2,11 @@ import requests
 import pandas as pd
 import time
 
+
 api_key = "e1f10a1e78da46f5b10a1e78da96f525"
 
-# 👇 Tokyo
+
+# Tokyo
 base_url = "https://api.weather.com/v1/location/RJTT:9:JP/observations/historical.json"
 
 headers = {
@@ -41,31 +43,39 @@ for month in range(1, 13):
 
     for obs in data.get("observations", []):
         all_data.append({
-            "date": obs.get("valid_time_gmt"),
-            "temp": obs.get("temp"),
-            "humidity": obs.get("rh"),
-            "wind_speed": obs.get("wspd"),
-            "pressure": obs.get("pressure"),
-            "precip": obs.get("precip_total")
+            "Date": obs.get("valid_time_gmt"),
+            "Temperature": obs.get("temp"),
+            "Humidity": obs.get("rh"),
+            "Wind_speed": obs.get("wspd"),
+            "Pressure": obs.get("pressure")
         })
 
     time.sleep(1)
 
 df = pd.DataFrame(all_data)
 
-df["date"] = pd.to_datetime(df["date"], unit="s")
-df["date"] = df["date"].dt.floor("D")
+df["Date"] = pd.to_datetime(df["Date"], unit="s")
+df["Date"] = df["Date"].dt.floor("D")
 
-df = df.groupby("date").agg({
-    "temp": "mean",
-    "humidity": "max",
-    "wind_speed": "mean",
-    "pressure": "mean",
-    "precip": "sum"
+df = df.groupby("Date").agg({
+    "Temperature": ["mean", "max"],
+    "Humidity": "mean",
+    "Wind_speed": "mean",
+    "Pressure": "mean"
 }).reset_index()
+
+# flatten columns
+df.columns = [
+    "Date",
+    "Temperature_mean",
+    "Temperature_max",
+    "Humidity",
+    "Wind_speed",
+    "Pressure"
+]
 
 df["City"] = "Tokyo"
 
-df.to_csv("tokyo_weather_2023.csv", index=False)
+df.to_csv("weather_tokyo_2023.csv", index=False)
 
 print("Done Tokyo ✅")

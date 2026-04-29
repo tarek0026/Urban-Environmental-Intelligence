@@ -2,9 +2,12 @@ import requests
 import pandas as pd
 import time
 
+
+
 api_key = "e1f10a1e78da46f5b10a1e78da96f525"
 
-base_url = "https://api.weather.com/v1/location/HECA:9:EG/observations/historical.json"
+# London 
+base_url = "https://api.weather.com/v1/location/EGLL:9:GB/observations/historical.json"
 
 headers = {
     "User-Agent": "Mozilla/5.0",
@@ -37,8 +40,9 @@ for month in range(1, 13):
         continue
 
     data = res.json()
+    observations = data.get("observations", [])
 
-    for obs in data.get("observations", []):
+    for obs in observations:
         all_data.append({
             "Date": obs.get("valid_time_gmt"),
             "Temperature": obs.get("temp"),
@@ -49,7 +53,12 @@ for month in range(1, 13):
 
     time.sleep(1)
 
+
+
 df = pd.DataFrame(all_data)
+
+
+df = df.drop_duplicates()
 
 df["Date"] = pd.to_datetime(df["Date"], unit="s")
 df["Date"] = df["Date"].dt.floor("D")
@@ -72,9 +81,9 @@ df.columns = [
 ]
 
 
+df["City"] = "London"
 
-df["City"] = "Cairo"
 
-df.to_csv("weather_cairo_2023.csv", index=False)
+df.to_csv("weather_london_2023.csv", index=False)
 
-print("Done ✅")
+print("Done London ✅")

@@ -1,6 +1,6 @@
 🧠 🌍 Urban Environmental Intelligence System
 
-Analyze and predict urban environmental factors affecting air quality and energy usage.
+An integrated system to analyze and predict urban environmental factors affecting air quality and energy consumption.
 
 🎯 Research Questions
 1️⃣ Green Space → Air Quality
@@ -9,143 +9,132 @@ Does increasing green space improve air quality?
 
 2️⃣ Weekend vs Weekday → Air Quality
 
-Are pollution levels lower on weekends?
+Are pollution levels lower on weekends compared to weekdays?
 
-3️⃣ Temperature → Electricity
+3️⃣ Temperature → Electricity Consumption
 
 How does temperature affect electricity consumption?
 
-🔗 الربط:
+🔗 System Story (Key Insight)
 
-Temperature → Electricity → Emissions → Air Quality
+Temperature → Electricity Consumption → Emissions → Air Quality
 
-🔥 كدا عندك Story مترابطة (مهم جدًا في التقييم)
+This creates a connected analytical narrative, which is very important for evaluation.
 
 
 
 📊 Phase 1: Data Collection
-🎯 الهدف:
+🎯 Objective
 
-جمع real datasets من مصادر مختلفة
+Collect real-world datasets from multiple sources.
 
-✔ البيانات المطلوبة:
+✔ Required Data
 Air Quality (AQI)
-Weather (Temperature, Humidity, Wind)
+Weather (Temperature, Humidity, Wind Speed)
 Electricity Consumption
-Green Space
+Green Space per Capita
 
 
 
-Phase 2: Data Integration
-🎯 الهدف:
 
-دمج كل البيانات في Dataset واحدة
+🔗 Phase 2: Data Integration
+🎯 Objective
 
-🔥 المفتاح:
+Merge all datasets into a single unified dataset.
+
+🔑 Key Columns
 City
 Date
-
-
-
-
-Features النهائية:
-🌡 Weather:
+📌 Final Features
+🌡 Weather
 Temperature
 Humidity
 Wind Speed
-⚡ Energy:
+⚡ Energy
 Electricity Consumption
-🌆 Location:
+🌆 Location
 City
-🌳 Environment:
-Green Space per capita
-📅 Time:
+🌳 Environment
+Green Space per Capita
+📅 Time Features
 Date
-Day of Week
 Is Weekend
-Month
 Season
-💡 Output:
-AQI (Target)
+
+🎯 Target Variable
+AQI (Air Quality Index)
 
 
 
-Phase 3: Data Preprocessing
-
-Handle missing values
+🧹 Phase 3: Data Preprocessing
+Handle missing values (interpolation or removal)
 Remove outliers
-Convert Date → datetime
-Encode City
-Normalize 
+Convert Date → datetime format
+Encode categorical variables (e.g., City)
+Normalize / scale numerical features
 
 
-📊 Phase 4: EDA (Exploratory Data Analysis)
+📊 Phase 4: Exploratory Data Analysis (EDA)
 
+🔍 Q1: Green Space vs AQI
+Visualization: Scatter Plot
+Expected Insight:
+Increasing green space → Lower AQI (better air quality)
 
-🔍 Q1:
-Green Space vs AQI
-Scatter Plot
-Insight:
+🔍 Q2: Weekend vs Weekday (Air Quality)
+Visualization: Boxplot
+Expected Insight:
+Pollution levels are lower on weekends
 
-كل ما المساحات الخضراء تزيد → AQI يقل
+🔍 Q3: Temperature vs Electricity
+Visualization: Scatter Plot + Line Plot
+Expected Insight:
+Higher temperature → Higher electricity consumption
+🔥 Requirements
+At least 4 visualizations
+Provide clear interpretation for each
 
-🔍 Q3:
-Weekend vs Weekday
-Boxplot
-Insight:
-
-التلوث أقل في الويك إند
-
-🔍 Q2:
-Temperature vs Electricity
-Scatter + Line
-Insight:
-
-الحرارة العالية → استهلاك أعلى
-
-🔥 لازم:
-
-≥ 4 graphs + تفسير لكل واحد
 
 🤖 Phase 5: Modeling
-🎯 الهدف:
+🎯 Objective
 
-نبني Model يربط كل حاجة
 
-🔥 أفضل اختيار:
-Predict → AQI
-باستخدام:
+Build a predictive model to estimate Air Quality (AQI)
+
+📥 Input Features
 Temperature
-Electricity
-Wind
+Electricity Consumption
+Wind Speed
 Green Space
 Is Weekend
 City
+📤 Output
+Predicted AQI
 
 
-🖥 Phase 6: Dashboard
-🎯 باستخدام: Streamlit
-🔹 Sections:
+🖥 Phase 6: Dashboard (Streamlit)
+🎯 Objective
+
+Create an interactive dashboard
+
+🔹 Sections
 1. Visualizations
-كل graphs اللي عملتها
+Display all EDA charts
 2. Prediction Tool 🔥
 
-User يدخل:
+User inputs:
 
 Temperature
 City
-Weekend
+Weekend (Yes/No)
 
-➡️ يطلع:
+Output:
 
 Predicted AQI
 🎤 Phase 7: Presentation & Documentation
-
-
-
-Report:
-Problem
-Data
+📄 Report Structure
+Problem Statement
+Data Sources
 Methodology
 Results
 Conclusion

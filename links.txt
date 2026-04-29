@@ -1,24 +1,48 @@
-source green spcae :https://statranker.org/cities-urban-life/top-100-cities-by-green-space-per-capita-2025/#sr-greencities-full
 
-“Green space data was obtained from the most recent available sources. 
+
+##📊 Data Sources
+All datasets used in this project were collected through a combination of web scraping and public APIs to ensure real-world relevance and coverage.
+
+🌳 Green Space Data
+Source:
+StatRanker
+Green space data was scraped from:
+https://statranker.org/cities-urban-life/top-100-cities-by-green-space-per-capita-2025/
+📌 Description
+This dataset provides green space per capita for major global cities.
+⚠ Assumption
+
+“Green space data was obtained from the most recent available sources.
 Since it is a relatively stable urban characteristic,
-it is assumed to be consistent over the study period (2023).”
+it is assumed to remain constant over the study period (2023).”
 
 
+🌫 Air Quality Data
+Source:
+Open-Meteo
+API Endpoint:
+https://air-quality-api.open-meteo.com/v1/air-quality
+📌 Description
+This dataset contains daily air quality measurements for multiple cities during 2023.
+✔ Features
 
-"https://air-quality-api.open-meteo.com/v1/air-quality"
+Date,City,PM2.5,PM10,O₃ (Ozone),NO₂ (Nitrogen Dioxide),CO (Carbon Monoxide),SO₂ (Sulfur Dioxide)
 
 
-This dataset contains daily air quality measurements for multiple cities during the year 2023.
- It includes key air pollution indicators such as
-  PM2.5, PM10, O₃ (ozone), NO₂ (nitrogen dioxide), CO (carbon monoxide), and SO₂ (sulfur dioxide)
+🌡Weather Data
 
+Source:
+Weather Underground
 
-  https://www.wunderground.com/history/monthly/eg/al-nozha/HECA/date/2023-1 
-  weather_cairo,web scraping
+Example URL:
+https://www.wunderground.com/history/monthly/eg/al-nozha/HECA/date/2023-1
 
-  https://www.kaggle.com/code/sumedh1507/global-weather-2014-2024-insights/input
-  weather London,nairobi ,New York ,Paris,Tokyo       
+📌 Collection Method
+Weather data was collected using an API-based approach (not web scraping) for 7 cities, covering daily records throughout 2023.
+The example URL above represents the structure of the data source used for extraction and validation.
  
+Date,City,Temperature_mean,Temperature_max,Humidity,Wind_speed,Pressure
 
-  
+
+
+
