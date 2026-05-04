@@ -56,4 +56,3 @@ Used in weather analysis and can indicate stable or unstable air conditions.
 
 ⚡ Electricity Consumption
 Total electricity usage for the city on a given day.
-Often used as a target variable in prediction models.
