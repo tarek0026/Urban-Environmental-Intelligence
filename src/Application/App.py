@@ -211,12 +211,12 @@ with st.sidebar:
     
     st.markdown('<div class="sidebar-box">', unsafe_allow_html=True)
     st.markdown('<div class="sidebar-title">ℹ️ About</div>', unsafe_allow_html=True)
-    st.markdown("**PM2.5 Prediction System** - AI-powered air quality forecasting using Random Forest Regression with 12 environmental indicators.", unsafe_allow_html=True)
+    st.markdown("**PM2.5 Prediction System** - AI-powered air quality forecasting using Random Forest Regression with 10 environmental indicators.", unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown('<div class="sidebar-box">', unsafe_allow_html=True)
     st.markdown('<div class="sidebar-title">📊 Model Info</div>', unsafe_allow_html=True)
-    st.markdown("**Algorithm:** Random Forest\n**Features:** 12 indicators\n**Output:** PM2.5 (µg/m³)", unsafe_allow_html=True)
+    st.markdown("**Algorithm:** Random Forest\n**Features:** 10 indicators\n**Output:** PM2.5 (µg/m³)", unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown('<div class="sidebar-box">', unsafe_allow_html=True)
@@ -270,17 +270,15 @@ with col2:
 
 # Pollution Indicators
 st.markdown('<div class="section-header">💨 Pollution Indicators</div>', unsafe_allow_html=True)
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     PM10 = st.number_input("PM10", value=50.0, min_value=0.0, max_value=500.0, step=1.0)
 with col2:
-    O3 = st.number_input("O3", value=30.0, min_value=0.0, max_value=500.0, step=0.5)
-with col3:
     NO2 = st.number_input("NO2", value=20.0, min_value=0.0, max_value=300.0, step=0.5)
-with col4:
+with col3:
     CO = st.number_input("CO", value=1.0, min_value=0.0, max_value=50.0, step=0.1)
-with col5:
+with col4:
     SO2 = st.number_input("SO2", value=10.0, min_value=0.0, max_value=300.0, step=0.5)
 
 # Weather Conditions
@@ -294,7 +292,7 @@ with col2:
 with col3:
     Wind_speed = st.number_input("Wind Speed (km/h)", value=5.0, min_value=0.0, max_value=100.0, step=0.5)
 with col4:
-    Pressure = st.number_input("Pressure (hPa)", value=1010.0, min_value=800.0, max_value=1100.0, step=1.0)
+    st.empty()
 
 # Environmental Factors
 st.markdown('<div class="section-header">🌳 Environmental Factors</div>', unsafe_allow_html=True)
@@ -312,10 +310,9 @@ with col2:
 # PREDICTION RESULTS
 # ============================================================================
 if predict_button:
-    # Prepare input data
+    # Prepare input data - EXACTLY matching model features
     input_data = pd.DataFrame({
         'PM10': [PM10],
-        'O3': [O3],
         'NO2': [NO2],
         'CO': [CO],
         'SO2': [SO2],
@@ -323,7 +320,6 @@ if predict_button:
         'Temperature_mean': [Temperature_mean],
         'Humidity': [Humidity],
         'Wind_speed': [Wind_speed],
-        'Pressure': [Pressure],
         'City': [City],
         'Season': [Season]
     })
@@ -424,8 +420,8 @@ if predict_button:
     # Input summary
     with st.expander("📋 View Input Parameters"):
         summary_data = pd.DataFrame({
-            'Parameter': ['PM10', 'O3', 'NO2', 'CO', 'SO2', 'Green Space', 'Temperature', 'Humidity', 'Wind Speed', 'Pressure', 'City', 'Season'],
-            'Value': [f"{PM10:.1f}", f"{O3:.1f}", f"{NO2:.1f}", f"{CO:.1f}", f"{SO2:.1f}", f"{Green_Space:.1f}%", f"{Temperature_mean:.1f}°C", f"{Humidity:.1f}%", f"{Wind_speed:.1f}", f"{Pressure:.1f}", City, Season]
+            'Parameter': ['PM10', 'NO2', 'CO', 'SO2', 'Green Space', 'Temperature', 'Humidity', 'Wind Speed', 'City', 'Season'],
+            'Value': [f"{PM10:.1f}", f"{NO2:.1f}", f"{CO:.1f}", f"{SO2:.1f}", f"{Green_Space:.1f}%", f"{Temperature_mean:.1f}°C", f"{Humidity:.1f}%", f"{Wind_speed:.1f}", City, Season]
         })
         st.dataframe(summary_data, use_container_width=True, hide_index=True)
 
